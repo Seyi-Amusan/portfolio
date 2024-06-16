@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seyi Amusan - Frontend Developer</title>
-    <link rel="stylesheet" href="assets/css/output.css">
 
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-    <script src="node_modules/@glidejs/glide/dist/glide.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.5.2/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="assets/css/output.css">
+    <!-- <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"> -->
+
+    <title>Seyi Amusan - Frontend Developer</title>
+    
+    <!-- <script src="node_modules/@glidejs/glide/dist/glide.min.js" defer></script> -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.5.2/dist/glide.min.js"></script>
     <script defer src="index.js"></script>
 
 </head>
 <body class="py-20 text-[#333333] bg-[#eaecf1]">  
-    <div class="w-[30rem] mx-auto min-h-screen" >
+    <div class="w-[30rem] mx-auto px-2 min-h-screen" >
 
-        <header class=" mb-28">
-            <div class="w-[17rem] mb-10 rounded-xl shadow-zinc-300  shadow-xl">
+        <header class="mb-28">
+            <div class="w-[25rem] mb-10 rounded-xl shadow-zinc-300  shadow-xl">
                 <img src="assets/images/Seyi-Amusan.png" alt="My image" class="w-full h-full rounded-xl">
             </div>
             <div class="grid gap-y-6">
@@ -41,13 +45,72 @@
             </section>
 
             <section>
-                <h2 class=" font-bold mb-10">MY <span class="gradient">PROJECTS...</span></h2>
+                <h2 class=" font-bold mb-10 gradient">PROJECTS...</span></h2>
                 <p>Here's a couple of awesome projects I've worked on from <a href="frontendmentor.iohttps://www.frontendmentor.io/profile/Seyi-Amusan" target="_blank" class="font-medium underline">Frontend Mentor</a></p>
 
                 <div class="mt-16">
                     <div class="mb-12">
-                        <h3 class="project-heading">Landing Pages</h3>
+                        <h3 class="project-heading">React + API</h3>
                         <div class="glide">
+                            <div class="glide__track" data-glide-el="track">
+                                <div class="glide__slides">
+                                    <div class="bg-white pb-4 mb-4 glide__slide">
+                                        <div class="overflow-hidden h-[264px] mb-3">
+                                            <img src="assets/images/form-preview.jpg" class="project-image" alt="">
+                                        </div>
+                                        <div class="px-3">
+                                            <p class="text-2xl font-medium mb-4">Multi Step Form</p>
+                                            <div class="mb-4">
+                                                <img class="icon" src="assets/icons/html-5-svgrepo-com.svg" alt="">
+                                                <img class="icon" src="assets/icons/css-3-svgrepo-com.svg" alt="">
+                                                <img class="icon" src="assets/icons/tailwind-svgrepo-com.svg" alt="">
+                                                <img class="icon" src="assets/icons/javascript-svgrepo-com.svg" alt="">
+                                                <img class="icon" src="assets/icons/react-1-logo-svgrepo-com.svg" alt="">
+                                            </div>
+                                            <div class="btn-group bottom-curved">
+                                                <button class="btn-project">Explore</button>
+                                                <button class="btn-project"><a target="_blank">Preview</a></button>
+                                                <button class="btn-project"><a target="_blank">code</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-white pb-4 glide__slide">
+                                        <div class="overflow-hidden h-[264px] mb-3">
+                                            <img src="assets/images/countries-preview.jpg" class="project-image" alt="">
+                                        </div>
+                                        <div class="px-3">
+                                            <p class="text-2xl font-medium mb-4">Rest countries API with theme switcher</p>
+                                            <div class="mb-4">
+                                                <img class="icon" src="assets/icons/html-5-svgrepo-com.svg" alt="">
+                                                <img class="icon" src="assets/icons/css-3-svgrepo-com.svg" alt="">
+                                                <img class="icon" src="assets/icons/tailwind-svgrepo-com.svg" alt="">
+                                                <img class="icon" src="assets/icons/javascript-svgrepo-com.svg" alt="">
+                                                <img class="icon" src="assets/icons/react-1-logo-svgrepo-com.svg" alt="">
+                                            </div>
+                                            <div class="btn-group bottom-curved">
+                                                <button class="btn-project">Explore</button>
+                                                <button class="btn-project"><a href="https://seyi-amusan.github.io/bookmark-landing-page" target="_blank">Preview</a></button>
+                                                <button class="btn-project"><a href="https://github.com/seyi-amusan/bookmark-landing-page" target="_blank">code</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div data-glide-el="controls">
+                                <button data-glide-dir="<<"><img class="icon border border-black rounded-full me-6" src="assets/icons/arrow-left-svgrepo-com.svg" alt=""></button>
+                                <button data-glide-dir=">>"><img class="icon border border-black rounded-full" src="assets/icons/arrow-right-svgrepo-com.svg" alt=""></button>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+                    <div class="mb-12">
+                        <h3 class="project-heading">Landing Pages</h3>
+                        <div class="glide glide-2">
                             <div class="glide__track" data-glide-el="track">
                                 <div class="glide__slides">
                                     <div class="bg-white pb-4 mb-4 glide__slide">
@@ -64,8 +127,8 @@
                                             </div>
                                             <div class="btn-group bottom-curved">
                                                 <button class="btn-project">Explore</button>
-                                                <button class="btn-project">Preview</button>
-                                                <button class="btn-project">Code</button>
+                                                <button class="btn-project"><a href="https://seyi-amusan.github.io/manage-landing-page" target="_blank">Preview</a></button>
+                                                <button class="btn-project"><a href="https://github.com/seyi-amusan/manage-landing-page" target="_blank">code</a></button>
                                             </div>
                                         </div>
                                     </div>
@@ -84,8 +147,8 @@
                                             </div>
                                             <div class="btn-group bottom-curved">
                                                 <button class="btn-project">Explore</button>
-                                                <button class="btn-project">Preview</button>
-                                                <button class="btn-project">Code</button>
+                                                <button class="btn-project"><a href="https://seyi-amusan.github.io/bookmark-landing-page" target="_blank">Preview</a></button>
+                                                <button class="btn-project"><a href="https://github.com/seyi-amusan/bookmark-landing-page" target="_blank">code</a></button>
                                             </div>
                                         </div>
                                     </div>
@@ -102,7 +165,7 @@
                     </div>
 
                     <div>
-                        <h3 class="project-heading">Javascripty</h3>
+                        <h3 class="project-heading">Javascript + API</h3>
                         <div class="bg-white pb-4">
                             <div class="overflow-hidden h-[264px] mb-3">
                                 <img src="assets/images/ip-preview.jpg" class="project-image" alt="">
@@ -112,13 +175,12 @@
                                 <div class="mb-4">
                                     <img class="icon" src="assets/icons/html-5-svgrepo-com.svg" alt="">
                                     <img class="icon" src="assets/icons/css-3-svgrepo-com.svg" alt="">
-                                    <img class="icon" src="assets/icons/tailwind-svgrepo-com.svg" alt="">
                                     <img class="icon" src="assets/icons/javascript-svgrepo-com.svg" alt="">
                                 </div>
                                 <div class="btn-group bottom-curved">
                                     <button class="btn-project">Explore</button>
-                                    <button class="btn-project">Preview</button>
-                                    <button class="btn-project">Code</button>
+                                    <button class="btn-project"><a href="https://seyi-amusan.github.io/ip-address-tracker-main" target="_blank">Preview</a></button>
+                                                <button class="btn-project"><a href="https://github.com/seyi-amusan/ip-address-tracker-main" target="_blank">code</a></button>
                                 </div>
                             </div>
                         </div>
