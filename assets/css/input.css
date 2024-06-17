@@ -54,6 +54,10 @@ section{
 
 }
 
+.btn{
+    @apply bg-[#0080ff] hover:bg-[#eaecf1] w-full text-2xl p-4 text-white hover:text-[#333333] font-semibold rounded-xl shadow-lg transform transition duration-200
+}
+
 .animate-on-scroll{
     opacity: 0;
     transform: translateY(1.7rem);
