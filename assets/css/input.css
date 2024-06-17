@@ -22,6 +22,10 @@ h3{
     @apply text-3xl   
 }
 
+input, textarea{
+    @apply  border border-gray-300 w-full px-3 py-4 rounded-lg shadow-sm focus:outline-none focus:border focus:border-[#0080ff]
+}
+
 section{
     @apply mb-28  
 }
@@ -48,4 +52,15 @@ section{
 .project-heading{
     @apply uppercase font-medium mb-6
 
+}
+
+.animate-on-scroll{
+    opacity: 0;
+    transform: translateY(3rem);
+    transition: all 1s;
+}
+
+.show{
+    transform: translateY(0);
+    opacity: 1;
 }

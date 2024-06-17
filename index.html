@@ -21,10 +21,10 @@
           </div>
 
         <header class="mb-28">
-            <div class="w-[20rem] sm:w-[25rem] mb-10 rounded-xl shadow-zinc-300  shadow-xl">
+            <div class="w-[20rem] sm:w-[25rem] mb-10 rounded-xl shadow-zinc-300  shadow-xl animate-on-scroll">
                 <img src="assets/images/Seyi-Amusan.png" alt="My image" class="w-full h-full rounded-xl">
             </div>
-            <div class="grid gap-y-6">
+            <div class="grid gap-y-6 animate-on-scroll">
                 <div class="">
                     <p class="text-xl uppercase">Hello, I'm</p>
                     <h1 class="uppercase font-medium    gradient"><span class="">Seyi</span> Amusan</h1>
@@ -38,41 +38,44 @@
 
         <main>
             <section>
-                <h2 class=" font-bold mb-10">MY <span class="gradient">STORY...</span></h2>
-                <div class="border-gradient p-px">
-                    <div class="bg-[#eaecf1] rounded-xl p-5 text-xl">
-                        <p class="mb-4">
+                <h2 class=" font-bold mb-10 animate-on-scroll">MY <span class="gradient">STORY...</span></h2>
+                <div class="border-gradient p-px animate-on-scroll">
+                    <div class="bg-[#eaecf1] rounded-xl p-5 text-xl *:mb-4">
+                        <p>
                             I’m a Computer Engineering student at the University of Lagos. 
                         </p>
-                        <p class="mb-4">
+                        <p>
                              When I was eleven, I approached <a target="_blank" href="https://github.com/mayomi1" class="underline">Mayomi</a> to teach me a tech skill, and I was introduced to search engine optimization. 
                             Although I couldn't continue then due to a lack of resources, my passion never waned.
                         </p>
-                        <p class="mb-4">
+                        <p>
                             A few months later, I asked him to teach me to code and he gave me access to his Sololearn account. 
                             That was where my programming journey truly began. 
                             I started with Python and grasped some basic programming fundamentals. 
                             I explored various tech courses in development, design, data science, and machine learning.
                             And finally decided to be a frontend guy.
                         </p>
-                        <p class="mb-4">
+                        <p>
                             At fourteen, I met <a target="_blank" href="https://github.com/oladapo-joseph" class="underline">Dapo</a>, who generously gave me a laptop,
                             I'm grateful to God for this opportunity and can't thank <a target="_blank" href="https://github.com/oladapo-joseph" class="underline">Dapo</a> enough.  
                             With newfound resources, 
                             I immersed myself in mastering Javascript and many popular CSS frameworks, building projects alongside.
                         </p>
-                        <p class="mb-4">I am an ardent <b class="gradient">Christian</b> and so believe in Jesus Christ. months of the people who helped me in my story are folks from my local church</p>
-                        <p class="mb-4">Now, I'm seeking a role where I can leverage my skills as frontend developer to help a company achieve its goals and be properly mentored in my career. Let’s build stuff together!</p>
+                        <p>I am an ardent <b class="gradient">Christian</b> and so believe in Jesus Christ. months of the people who helped me in my story are folks from my local church</p>
+                        <p>Now, I'm seeking a role where I can leverage my skills as frontend developer to help a company achieve its goals and be properly mentored in my career.</p>
+                        <p class="mb-0">I'm also experienced with Linux.</p>
                     </div>
                 </div>
             </section>
 
             <section>
-                <h2 class=" font-bold mb-10 gradient">PROJECTS...</span></h2>
-                <p>Here's a couple of awesome projects I've worked on from <a href="frontendmentor.iohttps://www.frontendmentor.io/profile/Seyi-Amusan" target="_blank" class="font-medium underline">Frontend Mentor</a></p>
+                <div class="animate-on-scroll">
+                    <h2 class=" font-bold mb-10 gradient">PROJECTS...</h2>
+                    <p>Here's a couple of awesome projects I've worked on from <a href="frontendmentor.iohttps://www.frontendmentor.io/profile/Seyi-Amusan" target="_blank" class="font-medium underline">Frontend Mentor</a></p>
+                </div>
 
                 <div class="mt-16">
-                    <div class="mb-12">
+                    <div class="mb-12 animate-on-scroll">
                         <h3 class="project-heading">React + API</h3>
                         <div class="glide">
                             <div class="glide__track" data-glide-el="track">
@@ -131,7 +134,7 @@
                     </div>
 
 
-                    <div class="mb-12">
+                    <div class="mb-12 animate-on-scroll">
                         <h3 class="project-heading">Landing Pages</h3>
                         <div class="glide glide-2">
                             <div class="glide__track" data-glide-el="track">
@@ -187,7 +190,7 @@
                         </div>
                     </div>
 
-                    <div>
+                    <div class="animate-on-scroll">
                         <h3 class="project-heading">Javascript + API</h3>
                         <div class="bg-white pb-4">
                             <div class="overflow-hidden h-[230px] mb-3">
@@ -203,7 +206,7 @@
                                 <div class="btn-group bottom-curved">
                                     <button class="btn-project">Explore</button>
                                     <button class="btn-project"><a href="https://seyi-amusan.github.io/ip-address-tracker-main" target="_blank">Preview</a></button>
-                                                <button class="btn-project"><a href="https://github.com/seyi-amusan/ip-address-tracker-main" target="_blank">code</a></button>
+                                    <button class="btn-project"><a href="https://github.com/seyi-amusan/ip-address-tracker-main" target="_blank">code</a></button>
                                 </div>
                             </div>
                         </div>
@@ -212,7 +215,47 @@
                     </div>
                 </div>
             </section>
+
+            <section class="mb-8">
+                <div class="animate-on-scroll">
+                    <h2 class=" font-bold mb-10 "><span class="gradient">CONTACT</span> ME</h2>
+                
+                <form class="grid gap-y-7 bg-white px-4 py-10 rounded-lg shadow-lg mb-11">
+                    <div class="*:block">
+                        <label for="#name" class=" text-2xl uppercase">Name</label>
+                        <input type="text" id="name">
+                    </div>
+
+                    <div class="*:block">
+                        <label for="#name" class=" text-2xl uppercase">Email</label>
+                        <input type="text" id="name">
+                    </div>
+
+                    <div class="*:block">
+                        <label for="#message" class=" text-2xl uppercase">Message</label>
+                        <textarea id="message"></textarea>
+                    </div>
+                </form>
+                </div>
+
+                <div class="animate-on-scroll">
+                    <p class="mb-3">Connect with me:</p>
+                    <div class="grid grid-flow-col gap-x-2 mb-3">
+                        <img class="icon transform hover:scale-110" src="assets/icons/gmail-svgrepo-com.svg" alt="">
+                        <img class="icon transform hover:scale-110" src="assets/icons/x-logo.svg" alt="">
+                        <img class="icon transform hover:scale-110" src="assets/icons/whatsapp-color-svgrepo-com.svg" alt="">
+                        <img class="icon transform hover:scale-110" src="assets/icons/linkedin-svgrepo-com.svg" alt="">
+                        <img class="icon transform hover:scale-110" src="assets/icons/github-142-svgrepo-com.svg" alt="">
+                    </div>
+                    <p>I'd love to hear from you! Whether you have a project in mind, want to collaborate, or just say hello, feel free to reach out using the form above or connect with me on social media. <br> Looking forward to chatting with you!                    </p>
+                </div>
+            </section>
         </main>
+
+        <footer>
+            <hr class="text-black mb-2">
+            <p class="text-2xl uppercase">&copy; Seyi Amusan</p>
+        </footer>   
     </div>
 </body>
 </html>
