@@ -947,7 +947,7 @@ section {
 
 .animate-on-scroll{
   opacity: 0;
-  transform: translateY(3rem);
+  transform: translateY(1.7rem);
   transition: all 1s;
 }
 
