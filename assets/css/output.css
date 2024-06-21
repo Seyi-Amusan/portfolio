@@ -648,12 +648,12 @@ video {
   height: 230px;
 }
 
-.h-\[2px\] {
-  height: 2px;
-}
-
 .h-full {
   height: 100%;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-\[20rem\] {
@@ -671,6 +671,18 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-11 {
+  width: 2.75rem;
 }
 
 .transform {
@@ -779,6 +791,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -822,11 +838,6 @@ video {
 .text-\[\#333333\] {
   --tw-text-opacity: 1;
   color: rgb(51 51 51 / var(--tw-text-opacity));
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-transparent {
@@ -873,11 +884,6 @@ video {
           background-clip: text;
   color: transparent;
 }
-
-/* body{
-    display: grid;
-    grid-template-columns: 25rem min-content 1fr;
-} */
 
 img{
   -webkit-user-select: none;
@@ -1028,10 +1034,9 @@ section {
   opacity: 1;
 }
 
-@media (max-width: 960px) {
-  .container {
-    margin-inline-start: auto;
-  }
+.\*\:mx-auto > * {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .\*\:mb-4 > * {
@@ -1040,6 +1045,15 @@ section {
 
 .\*\:block > * {
   display: block;
+}
+
+.\*\:w-\[90vw\] > * {
+  width: 90vw;
+}
+
+.\*\:px-4 > * {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .hover\:scale-110:hover {
@@ -1059,6 +1073,10 @@ section {
 
   .sm\:w-\[30rem\] {
     width: 30rem;
+  }
+
+  .\*\:sm\:max-w-\[30rem\] > * {
+    max-width: 30rem;
   }
 }
 
