@@ -53,13 +53,17 @@ section{
     @apply w-9 inline
 }
 
+.icon-social-media{
+    @apply transform hover:scale-110 cursor-pointer 
+}
+
 .project-heading{
     @apply uppercase font-medium mb-6
 
 }
 
 .btn{
-    @apply bg-[#0080ff] hover:bg-[#eaecf1] w-full text-2xl p-4 text-white hover:text-[#333333] font-semibold rounded-xl shadow-lg transform transition duration-200
+    @apply bg-[#0080ff] w-full text-2xl p-4 text-white hover:text-[#333333] font-semibold rounded-xl shadow-lg transform transition duration-200
 }
 
 .animate-on-scroll{

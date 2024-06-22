@@ -13,9 +13,7 @@
     <script defer src="index.js"></script>
 
 </head>
-<body class="pt-10 text-[#333333] bg-[#eaecf1] *:w-[90vw] *:sm:max-w-[30rem] *:px-4 *:mx-auto">  
-
-    <!-- <div class="w-[90vw] sm:w-[30rem] ms-[25rem] me-auto px-2 container" > -->
+<body class="pt-10 text-[#333333] bg-[#eaecf1] *:w-[90vw] *:sm:max-w-[30rem] *:mx-auto *:lg:ms-[25rem]">  
 
         <div class="text-transparent text-stroke uppercase text-5xl tracking-widest mb-3">
             portfolio
@@ -28,11 +26,11 @@
             <div class="grid gap-y-6 animate-on-scroll">
                 <div class="">
                     <p class="text-xl uppercase">Hello, I'm</p>
-                    <h1 class="uppercase font-semibold"><span class="">Seyi</span> Amusan</h1>
+                    <h1 class="uppercase font-semibold">Seyi Amusan</h1>
                 </div>
                 <p class="text-xl">An aspiring <span class="gradient font-semibold">frontend developer</span> focused on modern web technologies and highly performant <span class="gradient font-semibold">web solutions</span></p>
                 <div class="border-gradient w-max hover:p-px">
-                    <button class="btn">View my CV</button>
+                    <button class="btn hover:bg-[#eaecf1]"><a href="Seyi_CV.pdf">View my CV</a></button>
                 </div>
             </div>
         </header>
@@ -41,7 +39,7 @@
             <section>
                 <h2 class=" font-bold mb-10 animate-on-scroll">MY <span class="gradient">STORY...</span></h2>
                 <div class="border-gradient p-px ">
-                    <div class="bg-[#eaecf1] rounded-xl p-5 text-xl *:mb-4 ">
+                    <div class="bg-[#eaecf1] rounded-xl py-5 px-3 text-xl *:mb-4 ">
                         <p class="animate-on-scroll">
                             I’m a <b>Computer Engineering</b> student at the University of Lagos. 
                         </p>
@@ -62,7 +60,7 @@
                             With newfound resources, 
                             I immersed myself in mastering <b>Javascript</b> and many popular <b>CSS frameworks</b>, building projects alongside.
                         </p>
-                        <p class="animate-on-scroll">I am an ardent <b>Christian</b> and most of the people who helped me in my story are folks from my local church</p>
+                        <p class="animate-on-scroll">I am an ardent <b>Christian</b> and most of the people who helped me in my story are folks from my local church.</p>
                         <p class="animate-on-scroll">Now, I'm seeking a role where I can leverage my skills as frontend developer to help a company achieve its goals and be properly <b>mentored</b> in my career.</p>
                         <p class="mb-0 animate-on-scroll">I'm also experienced with <b>Linux</b>.</p>
                     </div>
@@ -77,7 +75,7 @@
 
                 <div class="mt-16">
                     <div class="mb-12 animate-on-scroll">
-                        <h3 class="project-heading">React</h3>
+                        <h3 class="project-heading">React + api</h3>
                         <div class="glide">
                             <div class="glide__track" data-glide-el="track">
                                 <div class="glide__slides">
@@ -107,7 +105,7 @@
                                             <img src="assets/images/countries-preview.jpg" class="project-image" alt="">
                                         </div>
                                         <div class="px-3">
-                                            <p class="text-2xl font-medium mb-4">Rest API with theme switcher</p>
+                                            <p class="text-2xl font-medium mb-4">Countries app with theme</p>
                                             <div class="mb-4">
                                                 <img class="icon" src="assets/icons/html-5-svgrepo-com.svg" alt="">
                                                 <img class="icon" src="assets/icons/css-3-svgrepo-com.svg" alt="">
@@ -192,7 +190,7 @@
                     </div>
 
                     <div class="animate-on-scroll">
-                        <h3 class="project-heading">Javascript</h3>
+                        <h3 class="project-heading">Javascript + api</h3>
                         <div class="bg-white pb-4">
                             <div class="overflow-hidden h-[230px] mb-3">
                                 <img src="assets/images/ip-preview.jpg" class="project-image" alt="">
@@ -224,38 +222,40 @@
                 <form action="https://formspree.io/f/mwpeevqk" method="POST" class="grid gap-y-7 bg-white px-4 py-10 rounded-lg shadow-lg mb-11">
                     <div class="*:block">
                         <label for="#name" class=" text-2xl uppercase">Name</label>
-                        <input type="text" name="name" id="name">
+                        <input type="text" name="name" id="name" required>
                     </div>
 
                     <div class="*:block">
-                        <label for="#name" class=" text-2xl uppercase">Email</label>
-                        <input type="text" name="email" id="name">
+                        <label for="#email" class=" text-2xl uppercase">Email</label>
+                        <input type="text" name="email" id="email" required>
                     </div>
 
                     <div class="*:block">
                         <label for="#message" class=" text-2xl uppercase">Message</label>
-                        <textarea name="message" id="message"></textarea>
+                        <textarea name="message" id="message" required></textarea>
                     </div>
 
                     <div class="border-gradient w-max hover:p-px">
-                        <button class="btn">SEND</button>
+                        <button class="btn hover:bg-white">SEND</button>
                     </div>
                 </form>
                 </div>
 
                 <div class="animate-on-scroll">
-                    <p class="mb-5 text-3xl font-semibold">Connect with me:</p>
-                    <div class="grid grid-flow-col gap-x-2 mb-5">
-                        <img class="icon transform hover:scale-110 cursor-pointer " src="assets/icons/gmail-svgrepo-com.svg" alt="">
+                    <p class="mb-5 text-3xl font-sansemibold">Connect with me:</p>
+                    <div class="grid grid-flow-col items-center gap-x-2 mb-5">
                         <a href="https://x.com/SeyiAmusan82980" target="_blank">
-                            <img class="icon transform hover:scale-110 cursor-pointer" src="assets/icons/x-logo.svg" alt="">
+                            <img class="icon w-7 icon-social-media" src="assets/icons/x-logo.svg" alt="">
                         </a>
-                        <img class="icon transform hover:scale-110 cursor-pointer" src="assets/icons/whatsapp-color-svgrepo-com.svg" alt="">
-                        <a href="https://ng.linkedin.com/in/seyi-amusan-20139a252" target="_blank">
-                            <img class="w-11 transform hover:scale-110 cursor-pointer" src="assets/icons/linkedin-svgrepo-com.svg" alt="">
+                        <img class="icon icon-social-media" src="assets/icons/whatsapp-color-svgrepo-com.svg" alt="">
+                        <a href="https://ng.linkedin.com/in/seyi-amusan-414895294" target="_blank">
+                            <img class="w-11 icon-social-media" src="assets/icons/linkedin-svgrepo-com.svg" alt="">
                         </a>
                         <a href="https://github.com/Seyi-Amusan" target="_blank">
-                            <img class="icon transform hover:scale-110 cursor-pointer" src="assets/icons/github-142-svgrepo-com.svg" alt="">
+                            <img class="icon icon-social-media" src="assets/icons/github-142-svgrepo-com.svg" alt="">
+                        </a>
+                        <a href="mailto:seyiamusan151@gmail.com">
+                            <img class="icon icon-social-media " src="assets/icons/gmail-svgrepo-com.svg" alt="">
                         </a>
                     </div>
                     <p>I'd love to hear from you! Whether you have a project in mind, want to collaborate, or just say hello, feel free to reach out using the form above or connect with me on social media. <br> Looking forward to chatting with you!                    </p>
