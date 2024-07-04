@@ -614,6 +614,10 @@ video {
   width: 2.75rem;
 }
 
+.w-7 {
+  width: 1.75rem;
+}
+
 .w-\[20rem\] {
   width: 20rem;
 }
@@ -629,14 +633,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-7 {
-  width: 1.75rem;
 }
 
 .grid-flow-col {
