@@ -63,7 +63,7 @@ section{
 }
 
 .btn{
-    @apply bg-[#0080ff] w-full text-2xl p-4 text-white hover:text-[#333333] font-semibold rounded-xl shadow-lg transform transition duration-200
+    @apply bg-[#0080ff] text-xl p-4 text-white hover:text-[#333333] font-semibold rounded-xl shadow-lg transform transition duration-200
 }
 
 .animate-on-scroll{

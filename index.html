@@ -7,69 +7,51 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.5.2/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="assets/css/output.css">
 
+    <!-- <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+  
+
     <title>Seyi Amusan - Frontend Developer</title>
     
+    <!-- <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script> -->
     <script defer src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.5.2/dist/glide.min.js"></script>
-    <script defer src="index.js"></script>
+    <script defer src="scripts/scrollAnimation.js"></script>
+    <script defer src="scripts/carousel.js"></script>
 
 </head>
-<body class="pt-10 text-[#333333] bg-[#eaecf1] *:w-[90vw] *:sm:max-w-[30rem] *:mx-auto *:lg:ms-[25rem]">  
+<body class="pt-10 text-[#333333] bg-[#eaecf1] *:w-[90vw] *:sm:max-w-[30rem] *:mx-auto">  
 
-        <div class="text-transparent text-stroke uppercase text-5xl tracking-widest mb-3">
+        <div class="text-transparent text-stroke uppercase text-5xl tracking-widest lg:text-center mb-4 lg:mb-14">
             portfolio
         </div> 
 
-        <header class="mb-28">
-            <div class="w-[20rem] sm:w-[25rem] mb-10 rounded-xl shadow-zinc-300  shadow-xl animate-on-scroll">
+        <header class="mb-28 lg:max-w-[55rem] lg:grid grid-flow-col items-center gap-x-20">
+            <div class="w-[20rem] sm:w-[25rem] mb-10 rounded-xl shadow-zinc-300  shadow-xl animate-on-scroll order-2">
                 <img src="assets/images/Seyi.png" alt="My image" class="w-full h-full rounded-xl">
             </div>
+
             <div class="grid gap-y-6 animate-on-scroll">
                 <div class="">
                     <p class="text-xl uppercase">Hello, I'm</p>
                     <h1 class="uppercase font-semibold">Seyi Amusan</h1>
                 </div>
                 <p class="text-xl">An aspiring <span class="gradient font-semibold">frontend developer</span> focused on modern web technologies and highly performant <span class="gradient font-semibold">web solutions</span></p>
-                <div class="border-gradient w-max hover:p-px">
-                    <button class="btn hover:bg-[#eaecf1]"><a href="Seyi-CV.docx">Download my CV</a></button>
+                <div class="w-max grid grid-flow-col gap-3">
+                    <div class="border-gradient w-max hover:p-px">
+                        <button class="btn w-[12.5rem] hover:bg-[#eaecf1]"><a href="Seyi-CV.docx">Download my CV</a></button>
+                    </div>
+                    <div class="border-gradient w-max hover:p-px">
+                        <button class="btn w-[12.5rem] hover:bg-[#eaecf1]"><a href="story.html">Read my story</a></button>
+                    </div>
                 </div>
             </div>
         </header>
 
         <main>
-            <section>
-                <h2 class=" font-bold mb-10 animate-on-scroll">MY <span class="gradient">STORY...</span></h2>
-                <div class="border-gradient p-px ">
-                    <div class="bg-[#eaecf1] rounded-xl py-5 px-3 text-xl *:mb-4 ">
-                        <p class="animate-on-scroll">
-                            I’m a <b>Computer Engineering</b> student at the University of Lagos. 
-                        </p>
-                        <p class="animate-on-scroll">
-                             When I was eleven, I approached <a target="_blank" href="https://ng.linkedin.com/in/mayomi1" class="underline">someone</a> to teach me a tech skill, and I was introduced to search engine optimization. 
-                            Although I couldn't continue then due to a lack of resources, my passion never waned.
-                        </p>
-                        <p class="animate-on-scroll">
-                            A few months later, I asked him to teach me to code and he gave me access to his Sololearn account. 
-                            That was where my programming journey truly began. 
-                            I started with <b>Python</b> and grasped some basic programming fundamentals. 
-                            I explored various tech courses in development, design, data science, and machine learning.
-                            And finally decided to be a frontend guy.
-                        </p>
-                        <p class="animate-on-scroll">
-                            At fourteen, I met <a target="_blank" href="https://ng.linkedin.com/in/oladapo-j-adeleke" class="underline">another preson</a>, who generously gave me a laptop,
-                            I can't thank him enough and I'm grateful to God for making us cross paths. <br>
-                            With newfound resources, 
-                            I immersed myself in mastering <b>Javascript</b> and many popular <b>CSS frameworks</b>, building projects alongside.
-                        </p>
-                        <p class="animate-on-scroll">I am an ardent <b>Christian</b> and most of the people who helped me are folks from my local church.</p>
-                        <p class="animate-on-scroll">Now, I'm seeking a role where I can leverage my skills as frontend developer to help a company achieve its goals and be properly <b>mentored</b> in my career.</p>
-                        <p class="mb-0 animate-on-scroll">I'm also experienced with <b>Linux</b>.</p>
-                    </div>
-                </div>
-            </section>
 
-            <section>
-                <div class="animate-on-scroll">
-                    <h2 class=" font-bold mb-10 gradient">PROJECTS...</h2>
+            <section class="mb-[9rem]">
+                <div class="animate-on-scroll ">
+                    <h2 class=" font-bold mb-10 gradient lg:text-center">PROJECTS...</h2>
                     <p>Here's a couple of awesome projects I've worked on from <a href="https://www.frontendmentor.io/profile/Seyi-Amusan" target="_blank" class="font-medium underline">Frontend Mentor</a></p>
                 </div>
 
@@ -214,11 +196,12 @@
                     </div>
                 </div>
             </section>
+        </main>
 
-            <section class="mb-8">
-                <div class="animate-on-scroll">
-                    <h2 class=" font-bold mb-10 "><span class="gradient">CONTACT</span> ME</h2>
-                
+        <section class="mb-8 lg:max-w-[65rem] lg:grid grid-flow-col gap-x-20">
+            <div class="animate-on-scroll order-2 lg:w-[30rem]">
+                <h2 class=" font-bold mb-10 "><span class="gradient">CONTACT</span> ME</h2>
+            
                 <form action="https://formspree.io/f/mwpeevqk" method="POST" class="grid gap-y-7 bg-white px-4 py-10 rounded-lg shadow-lg mb-11">
                     <div class="*:block">
                         <label for="#name" class=" text-2xl uppercase">Name</label>
@@ -236,36 +219,39 @@
                     </div>
 
                     <div class="border-gradient w-max hover:p-px">
-                        <button class="btn hover:bg-white">SEND</button>
+                        <button class="btn w-min hover:bg-white">SEND</button>
                     </div>
                 </form>
-                </div>
+            </div>
 
-                <div class="animate-on-scroll">
-                    <p class="mb-5 text-3xl font-semibold">Connect with me:</p>
-                    <div class="grid grid-flow-col items-center gap-x-2 mb-5">
-                        <a href="https://wa.me/message/KD7LF2B4H4VUH1">
-                            <img class="icon icon-social-media" src="assets/icons/whatsapp-color-svgrepo-com.svg" alt="">
-                        </a>
-                        <a href="mailto:seyiamusan151@gmail.com">
-                            <img class="icon icon-social-media " src="assets/icons/gmail-svgrepo-com.svg" alt="">
-                        </a>
-                        <a href="https://ng.linkedin.com/in/seyi-amusan-414895294" target="_blank">
-                            <img class="w-11 icon-social-media" src="assets/icons/linkedin-svgrepo-com.svg" alt="">
-                        </a>
-                        <a href="https://x.com/SeyiAmusan82980" target="_blank">
-                            <img class="icon w-7 icon-social-media" src="assets/icons/x-logo.svg" alt="">
-                        </a>
-                        <a href="https://github.com/Seyi-Amusan" target="_blank">
-                            <img class="icon icon-social-media" src="assets/icons/github-142-svgrepo-com.svg" alt="">
-                        </a>
-                    </div>
-                    <p>I'd love to hear from you! Whether you have a project in mind, want to collaborate, or just say hello, feel free to reach out using the form above or connect with me on social media. <br> Looking forward to chatting with you!                    </p>
-                </div>
-            </section>
-        </main>
+            <div class="animate-on-scroll ">
+                <p class="mb-5 text-3xl font-semibold lg:hidden">Connect with me:</p>
 
-        <footer style="width: 100vw;" class="bg-[#0080ff] py-2 px-4 w-screen text-center">
+                <h2 class=" font-bold mb-10 hidden lg:block"><span class="gradient">CONNECT</span> WITH ME</h2>
+
+                <p class="mb-5 lg:font-medium text-xl">I'd love to hear from you! Whether you have a project in mind, want to collaborate, or just say hello, feel free to reach out using this form or connect with me on social media. <br> Looking forward to chatting with you!                    </p>
+
+                <div class="grid grid-flow-col items-center gap-x-2">
+                    <a href="https://wa.me/message/KD7LF2B4H4VUH1">
+                        <img class="icon icon-social-media" src="assets/icons/whatsapp-color-svgrepo-com.svg" alt="">
+                    </a>
+                    <a href="mailto:seyiamusan151@gmail.com">
+                        <img class="icon icon-social-media " src="assets/icons/gmail-svgrepo-com.svg" alt="">
+                    </a>
+                    <a href="https://ng.linkedin.com/in/seyi-amusan-414895294" target="_blank">
+                        <img class="w-11 icon-social-media" src="assets/icons/linkedin-svgrepo-com.svg" alt="">
+                    </a>
+                    <a href="https://x.com/SeyiAmusan82980" target="_blank">
+                        <img class="icon w-7 icon-social-media" src="assets/icons/x-logo.svg" alt="">
+                    </a>
+                    <a href="https://github.com/Seyi-Amusan" target="_blank">
+                        <img class="icon icon-social-media" src="assets/icons/github-142-svgrepo-com.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer style="width: 100vw;" class="bg-[#0080ff] py-2 px-4 w-screen text-center lg:max-w-[65rem]">
             <p class="text-white">&copy; 2024  - Seyi Amusan</p>
         </footer>    
 
