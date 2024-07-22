@@ -1,13 +1,19 @@
-const glide = new Glide('.glide', {
-    type: 'carousel',
-    perView: 1,
-    animationDuration: 1500, 
-    
-}).mount();
+const glideLandingPages = new Glide('.glide-landing-pages', {
+  type: 'carousel',
+  startAt: 0,
+  perView: 1,
+  animationDuration: 700,
+  animationTimingFunc: 'ease-in-out'
+});
 
-const glideTwo = new Glide('.glide-2', {
-    type: 'carousel',
-    perView: 1,
-    animationDuration: 1500, 
-    
-}).mount();
+glideLandingPages.mount();
+
+const glideReact = new Glide('.glide-react', {
+  type: 'carousel',
+  startAt: 0,
+  perView: 1,
+  animationDuration: 700,
+  animationTimingFunc: 'ease-in-out'
+});
+
+glideReact.mount();
