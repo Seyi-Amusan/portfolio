@@ -661,6 +661,10 @@ video {
   width: 100vw;
 }
 
+.w-\[18rem\] {
+  width: 18rem;
+}
+
 .grid-flow-row {
   grid-auto-flow: row;
 }
@@ -1055,6 +1059,10 @@ section {
     width: 25rem;
   }
 
+  .sm\:w-\[20rem\] {
+    width: 20rem;
+  }
+
   .sm\:max-w-\[30rem\] {
     max-width: 30rem;
   }
@@ -1065,6 +1073,12 @@ section {
 
   .\*\:sm\:max-w-\[30rem\] > * {
     max-width: 30rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:w-\[25rem\] {
+    width: 25rem;
   }
 }
 
