@@ -37,12 +37,13 @@ section{
     @apply mb-4 transform transition-all duration-500 hover:scale-110 cursor-pointer
 }
 
-.border-gradient{
-    @apply rounded-xl bg-gradient-to-r from-[#0080ff] to-[#ff9500]
-}
 
 .btn-project{
-    @apply p-3 text-xl font-semibold hover:bg-gray-700 hover:text-white rounded-3xl transition duration-200 
+    @apply p-3 text-xl font-semibold hover:bg-gray-700 hover:text-white rounded-3xl transition duration-200 relative  h-12 
+}
+
+.btn-project > a {
+    @apply absolute h-full w-full flex justify-center items-center inset-0
 }
 
 .btn-group{
@@ -76,3 +77,4 @@ section{
     transform: translateY(0);
     opacity: 1;
 }
+      

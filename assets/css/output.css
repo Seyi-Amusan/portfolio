@@ -554,6 +554,18 @@ video {
   --tw-contain-style:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
+}
+
 .order-2 {
   order: 2;
 }
@@ -607,12 +619,24 @@ video {
   margin-top: 4rem;
 }
 
+.flex {
+  display: flex;
+}
+
 .grid {
   display: grid;
 }
 
 .hidden {
   display: none;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .h-\[230px\] {
@@ -627,16 +651,28 @@ video {
   width: 2.75rem;
 }
 
+.w-20 {
+  width: 5rem;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
 .w-7 {
   width: 1.75rem;
 }
 
-.w-\[12\.5rem\] {
-  width: 12.5rem;
+.w-\[18rem\] {
+  width: 18rem;
 }
 
-.w-\[20rem\] {
-  width: 20rem;
+.w-\[4\.5rem\] {
+  width: 4.5rem;
+}
+
+.w-\[6\.5rem\] {
+  width: 6.5rem;
 }
 
 .w-\[90vw\] {
@@ -652,33 +688,28 @@ video {
   width: max-content;
 }
 
-.w-min {
-  width: -moz-min-content;
-  width: min-content;
-}
-
 .w-screen {
   width: 100vw;
-}
-
-.w-\[18rem\] {
-  width: 18rem;
-}
-
-.grid-flow-row {
-  grid-auto-flow: row;
 }
 
 .grid-flow-col {
   grid-auto-flow: column;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .items-center {
   align-items: center;
 }
 
-.gap-3 {
-  gap: 0.75rem;
+.justify-center {
+  justify-content: center;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-x-2 {
@@ -791,6 +822,11 @@ video {
   line-height: 1;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -821,6 +857,11 @@ video {
   color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
 .text-transparent {
   color: transparent;
 }
@@ -837,6 +878,12 @@ video {
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -929,16 +976,9 @@ section {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.border-gradient {
-  border-radius: 0.75rem;
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-  --tw-gradient-from: #0080ff var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(0 128 255 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #ff9500 var(--tw-gradient-to-position);
-}
-
 .btn-project {
+  position: relative;
+  height: 3rem;
   border-radius: 1.5rem;
   padding: 0.75rem;
   font-size: 1.25rem;
@@ -956,6 +996,16 @@ section {
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.btn-project > a {
+  position: absolute;
+  inset: 0px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-group {
@@ -1040,35 +1090,13 @@ section {
   width: 90vw;
 }
 
-.hover\:bg-\[\#eaecf1\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 236 241 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-white:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.hover\:p-px:hover {
-  padding: 1px;
-}
-
 @media (min-width: 640px) {
-  .sm\:w-\[25rem\] {
-    width: 25rem;
-  }
-
   .sm\:w-\[20rem\] {
     width: 20rem;
   }
 
   .sm\:max-w-\[30rem\] {
     max-width: 30rem;
-  }
-
-  .sm\:grid-flow-col {
-    grid-auto-flow: column;
   }
 
   .\*\:sm\:max-w-\[30rem\] > * {
@@ -1119,3 +1147,4 @@ section {
     font-weight: 500;
   }
 }
+      
