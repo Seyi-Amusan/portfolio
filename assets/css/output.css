@@ -607,6 +607,14 @@ video {
   margin-top: 4rem;
 }
 
+.me-2 {
+  margin-inline-end: 0.5rem;
+}
+
+.me-1 {
+  margin-inline-end: 0.25rem;
+}
+
 .grid {
   display: grid;
 }
