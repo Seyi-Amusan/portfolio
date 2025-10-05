@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;  
 
+@layer base {
+    body {
+      @apply font-inter;
+    }
+  }
+  
+
 .text-stroke {
     -webkit-text-stroke: 1px #33333380;
   }
@@ -62,10 +69,14 @@ section{
 .btn{
     @apply bg-[#0080ff] text-xl p-4 text-white hover:text-[#333333] font-semibold rounded-xl shadow-lg transform transition duration-200
 }
-
-.cta{
-    @apply bg-[#0080ff] rounded-lg shadow-md text-lg  text-gray-200 flex justify-center items-center
-}
+.cta {
+    @apply bg-[#2563eb] rounded-lg shadow-md text-lg text-gray-200 flex justify-center items-center 
+           hover:bg-[#0066cc] hover:text-white hover:scale-105 
+           active:scale-95 transition-all duration-200 ease-in-out;
+  }
+  
+  
+  
 
 .animate-on-scroll{
     opacity: 0;

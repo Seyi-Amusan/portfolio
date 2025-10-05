@@ -2,7 +2,11 @@
 module.exports = {
   content: ['index.html', 'story.html'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      }
+    },
   },
   plugins: [
     require('tailwindcss-text-stroke')
