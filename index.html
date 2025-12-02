@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="assets/css/output.css">
 
     <link rel="icon" type="image/jpeg" href="assets/icons/favicon.jpeg">
-
+    <!-- Load Glide FIRST -->
     <script defer src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/glide.min.js"></script>
-    <script defer src="scripts/scrollAnimation.js"></script>
+    <!-- Then load your scripts that depend on Glide -->
     <script defer src="scripts/carousel.js"></script>
+    <script defer src="scripts/scrollAnimation.js"></script>
     <script defer src="scripts/footer.js"></script>
 
-    <title>Seyi Amusan - Frontend Developer</title>
+    <title>Seyi Amusan - Frontend Software Engineer</title>
 
 </head>
 <body class="pt-10 text-[#333333] bg-[#eaecf1] *:w-[90vw] *:sm:max-w-[30rem] *:mx-auto">     
@@ -41,13 +42,15 @@
                 </div>
                 <p class="text-xl">An aspiring <span class="gradient font-semibold">frontend developer</span> focused on modern web technologies and highly performant <span class="gradient font-semibold">web solutions</span></p>
                 <div class="w-max grid grid-flow-row gap-2">
-                    <a class="cta font-normal h-16 w-40" href="Seyi-Amusan_Resume.pdf">Download my CV</a>
+                    <a class="cta font-normal h-16 w-40" href="Seyi Amusan | Resume.pdf">Download my CV</a>
                     <a class="cta font-normal h-16 w-40" href="story.html">Read my story</a>
                 </div>
             </div>
         </header>
 
         <main>
+
+
 
             <section class="mb-[9rem]">
                 <div class="animate-on-scroll ">
@@ -64,62 +67,40 @@
 
                             <div class="bg-white pb-4 mb-4 glide__slide">
                                 <div class="overflow-hidden h-[230px] mb-3">
-                                    <img src="assets/images/interactive-comments-section.jpg" class="project-image" alt="">
+                                    <img src="assets/images/maglo-dashboard.png" class="project-image" alt="Maglo Finance Dashboard">
                                 </div>
                                 <div class="px-3">
-                                    <p class="text-2xl font-medium mb-4">Interactive Comments Section</p>
-                                    <p class="mb-4"> Developed a dynamic comments section with reply, edit, and delete functionality, emphasizing a clean UI and reusable React components.</p>
+                                    <p class="text-2xl font-medium mb-4">Maglo Finance Dashboard</p>
+                                    <p class="mb-4">Engineered a comprehensive finance management system with real-time invoice tracking, VAT calculations, and interactive data visualizations. Features secure authentication and full CRUD operations.</p>
                                     <div class="mb-4">
-                                        <img class="icon" src="assets/icons/html-5-svgrepo-com.svg" alt="">
-                                        <img class="icon" src="assets/icons/css-3-svgrepo-com.svg" alt="">
-                                        <img class="icon me-1" src="assets/icons/javascript-svgrepo-com.svg" alt="">
-                                        <img class="icon" src="assets/icons/react-1-logo-svgrepo-com.svg" alt="">
+                                        <img class="icon" src="assets/icons/React.svg" alt="">
+                                        <img class="icon" src="assets/icons/tailwind-svgrepo-com.svg" alt="">
+                                        <img src="assets/icons/javascript-svgrepo-com.svg" alt="" class="icon">
+                                        <img src="assets/icons/Appwrite.svg" alt="" class="icon">
                                     </div>
                                     <div class="btn-group bottom-curved">
-                                        <a class="project-link w-[6.5rem]" target="_blank" href="https://seyi-amusan.github.io/interactive-comment-section-react">Preview</a>
-                                        <a class="project-link w-[6.5rem]" target="_blank" href="https://github.com/seyi-amusan/interactive-comment-section-react">Code</a>
+                                        <a class="project-link w-[6.5rem]" target="_blank" href="https://maglo-dashboard.netlify.app/auth/login">Preview</a>
+                                        <a class="project-link w-[6.5rem]" target="_blank" href="https://github.com/seyi-amusan/maglo">Code</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="bg-white pb-4 glide__slide">
-                                <div class="overflow-hidden h-[230px] mb-3">
-                                    <img src="assets/images/countries-preview.jpg" class="project-image" alt="">
-                                </div>
-                                <div class="px-3">
-                                    <p class="text-2xl font-medium mb-4">Countries App With Theme</p>
-                                    <p class="mb-4">Built a responsive app that fetches and displays details of countries worldwide, featuring a light/dark theme toggle for improved UX.</p>
-                                    <div class="mb-4">
-                                        <img class="icon" src="assets/icons/html-5-svgrepo-com.svg" alt="">
-                                        <img class="icon" src="assets/icons/css-3-svgrepo-com.svg" alt="">
-                                        <img class="icon" src="assets/icons/tailwind-svgrepo-com.svg" alt="">
-                                        <img class="icon" src="assets/icons/javascript-svgrepo-com.svg" alt="">
-                                        <img class="icon" src="assets/icons/react-1-logo-svgrepo-com.svg" alt="">
-                                    </div>
-                                    <div class="btn-group bottom-curved">
-                                        <a class="project-link w-[6.5rem]" href="https://seyi-amusan.github.io/countries-app" target="_blank">Preview</a>
-                                        <a class="project-link w-[4.5rem]" href="https://github.com/seyi-amusan/countries-app" target="_blank">Code</a>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="bg-white pb-4 mb-4 glide__slide">
+                            <div class="bg-white pb-4 mb-4 h-[500px] glide__slide">
                                 <div class="overflow-hidden h-[230px] mb-3">
-                                    <img src="assets/images/form-preview.jpg" class="project-image" alt="">
+                                    <img src="assets/images/naija-nutri-hub.jpeg" class="project-image" alt="Naija Nutri Hub">
                                 </div>
                                 <div class="px-3">
-                                    <p class="text-2xl font-medium mb-4">Multi Step Form</p>
-                                    <p class="mb-4">Designed a multi-step form with smooth transitions and validation, ensuring accessibility and responsiveness across all devices.</p>
+                                    <p class="text-2xl font-medium mb-4">Naija Nutri Hub</p>
+                                    <p class="mb-4">Contributed to an open-source nutrition platform, building authentication systems and integrating ML/AI features. Achieved First Runner-Up in Hacktoberfest with 14 merged pull requests.</p>
                                     <div class="mb-4">
-                                        <img class="icon" src="assets/icons/html-5-svgrepo-com.svg" alt="">
-                                        <img class="icon" src="assets/icons/css-3-svgrepo-com.svg" alt="">
+                                        <img class="icon" src="assets/icons/nextjs-icon-svgrepo-com.svg" alt="">
+                                        <img class="icon" src="assets/icons/typescript-svgrepo-com.svg" alt="">
                                         <img class="icon" src="assets/icons/tailwind-svgrepo-com.svg" alt="">
-                                        <img class="icon" src="assets/icons/javascript-svgrepo-com.svg" alt="">
-                                        <img class="icon" src="assets/icons/react-1-logo-svgrepo-com.svg" alt="">
+                                        <img class="icon" src="assets/icons/FastAPI.svg" alt="">
                                     </div>
                                     <div class="btn-group bottom-curved">
-                                        <a class="project-link w-[6.5rem]" target="_blank" href="https://seyi-amusan.github.io/forms-app">Preview</a>
-                                        <a class="project-link w-[6.5rem]" target="_blank" href="https://github.com/seyi-amusan/forms-app">Code</a>
+                                        <a class="project-link w-[6.5rem]" target="_blank" href="https://github.com/seyi-amusan/naija-nutri-hub-frontend">Code</a>
                                     </div>
                                 </div>
                             </div>
@@ -132,80 +113,10 @@
                         </div>
                     </div>
 
-                    <div class="glide glide-landing-pages mb-20 animate-on-scroll">
-                        <h3 class="project-heading">Landing Pages</h3>
-                        <div class="glide__track" data-glide-el="track">
-                          <div class="glide__slides">
-                            <div class="bg-white pb-4 mb-4 glide__slide">
-                                <div class="overflow-hidden h-[230px] mb-3">
-                                    <img src="assets/images/manage-preview.jpg" class="project-image" alt="">
-                                </div>
-                                <div class="px-3">
-                                    <p class="text-2xl font-medium mb-4">Manage Landing Page</p>
-                                    <div class="mb-4">
-                                        <img class="icon" src="assets/icons/html-5-svgrepo-com.svg" alt="">
-                                        <img class="icon" src="assets/icons/css-3-svgrepo-com.svg" alt="">
-                                        <img class="icon" src="assets/icons/tailwind-svgrepo-com.svg" alt="">
-                                        <img class="icon" src="assets/icons/javascript-svgrepo-com.svg" alt="">
-                                    </div>
-                                    <div class="btn-group bottom-curved">
-                                        <a class="project-link w-[6.5rem]" href="https://seyi-amusan.github.io/manage-landing-page" target="_blank">Preview</a>
-                                        <a class="project-link w-[4.5rem]" href="https://github.com/seyi-amusan/manage-landing-page" target="_blank">Code</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-white pb-4 glide__slide">
-                                <div class="overflow-hidden h-[230px] mb-3">
-                                    <img src="assets/images/bookmark-preview.jpg" class="project-image" alt="">
-                                </div>
-                                <div class="px-3">
-                                    <p class="text-2xl font-medium mb-4">Bookmark Landing Page</p>
-                                    <div class="mb-4">
-                                        <img class="icon" src="assets/icons/html-5-svgrepo-com.svg" alt="">
-                                        <img class="icon" src="assets/icons/css-3-svgrepo-com.svg" alt="">
-                                        <img class="icon" src="assets/icons/tailwind-svgrepo-com.svg" alt="">
-                                        <img class="icon" src="assets/icons/javascript-svgrepo-com.svg" alt="">
-                                    </div>
-                                    <div class="btn-group bottom-curved">
-                                        <a class="project-link w-[6.5rem]" href="https://seyi-amusan.github.io/bookmark-landing-page" target="_blank">Preview</a>
-                                        <a class="project-link w-[4.5rem]" href="https://github.com/seyi-amusan/bookmark-landing-page" target="_blank">Code</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                          </div>
-                        </div>
-                        <div class="glide__arrows" data-glide-el="controls">
-                            <button style="padding: 3px;" id="prevBtn" class="glide__arrow glide__arrow--left bg-[#eaecf1cd]" data-glide-dir="<"><img class="icon" src="assets/icons/arrow-left-svgrepo-com.svg" alt="Previous"></button>
-                            <button style="padding: 3px;" id="nextBtn" class="glide__arrow glide__arrow--right bg-[#eaecf1cd]" data-glide-dir=">"><img class="icon" src="assets/icons/arrow-right-svgrepo-com.svg" alt="Next"></button>
-                        </div>
-                    </div>
-
-                    <div class="mb-20 animate-on-scroll">
-                        <h3 class="project-heading">Javascript + api</h3>
-                        <div class="bg-white pb-4">
-                            <div class="overflow-hidden h-[230px] mb-3">
-                                <img src="assets/images/ip-preview.jpg" class="project-image" alt="">
-                            </div>
-                            <div class="px-3">
-                                <p class="text-2xl font-medium mb-4">IP Address Tracker</p>
-                                <p class="mb-4">Created a tool that fetches and displays IP-based location data for domains worldwide, integrating third-party APIs and handling edge cases gracefully.</p>
-                                <div class="mb-4">
-                                    <img class="icon" src="assets/icons/html-5-svgrepo-com.svg" alt="">
-                                    <img class="icon" src="assets/icons/css-3-svgrepo-com.svg" alt="">
-                                    <img class="icon" src="assets/icons/javascript-svgrepo-com.svg" alt="">
-                                </div>
-                                <div class="btn-group bottom-curved">
-                                    <a class="project-link w-[6.5rem]" href="https://seyi-amusan.github.io/ip-address-tracker-main" target="_blank">Preview</a>
-                                    <a class="project-link w-[4.5rem]" href="https://github.com/seyi-amusan/ip-address-tracker-main" target="_blank">Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
             </section>
+            
         </main>
 
         <section class="mb-8 lg:max-w-[65rem] lg:grid grid-flow-col gap-x-20">

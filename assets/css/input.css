@@ -40,8 +40,9 @@ input, textarea{
 section{
     @apply mb-28  
 }
-.project-image{
-    @apply mb-4 transform transition-all duration-500 hover:scale-110 cursor-pointer
+.project-image {
+  @apply mb-4 transform transition-all duration-500 hover:scale-110 cursor-pointer;
+  transform-origin: center;
 }
 
 
