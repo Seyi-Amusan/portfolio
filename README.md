@@ -59,7 +59,7 @@ If you'd like to contribute to this project, feel free to fork the repository an
 For any questions or feedback, feel free to reach out to me at:
 
 - **LinkedIn**: [My LinkedIn Profile](https://www.linkedin.com/in/seyi-amusan-414895294/)
-- **Portfolio**: [Portfolio livesite](https://seyi-amusan.github.io/portfoio)
+- **Portfolio**: [Portfolio livesite](https://seyi-amusan.github.io/portfolio)
 
 ---
 
