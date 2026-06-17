@@ -1,36 +1,47 @@
+const desktopMediaQuery = window.matchMedia("(min-width: 1024px)");
+const carouselSelectors = [".glide-react", ".glide-landing-pages"];
+const mountedCarousels = new Map();
+
 document.addEventListener("DOMContentLoaded", () => {
-  // Small delay to ensure all elements are rendered
-  setTimeout(() => {
-    initializeGlide();
-  }, 100);
+  updateCarousels();
+  desktopMediaQuery.addEventListener("change", updateCarousels);
 });
 
-function initializeGlide() {
-  const glideReactEl = document.querySelector('.glide-react');
-  const glideLandingPagesEl = document.querySelector('.glide-landing-pages');
-  
-  console.log('Glide React element:', glideReactEl);
-  console.log('Glide Landing Pages element:', glideLandingPagesEl);
-  
-  if (glideReactEl) {
-    new Glide('.glide-react', {
-      type: 'carousel',
-      startAt: 0,
-      perView: 1,
-      animationDuration: 700,
-      animationTimingFunc: 'ease-in-out'
-    }).mount();
-    console.log('Glide React initialized');
-  }
-  
-  if (glideLandingPagesEl) {
-    new Glide('.glide-landing-pages', {
-      type: 'carousel',
-      startAt: 0,
-      perView: 1,
-      animationDuration: 700,
-      animationTimingFunc: 'ease-in-out'
-    }).mount();
-    console.log('Glide Landing Pages initialized');
-  }
+function updateCarousels() {
+  carouselSelectors.forEach((selector) => {
+    const carouselEl = document.querySelector(selector);
+
+    if (!carouselEl) return;
+
+    if (desktopMediaQuery.matches) {
+      destroyCarousel(selector);
+      return;
+    }
+
+    mountCarousel(selector);
+  });
+}
+
+function mountCarousel(selector) {
+  if (mountedCarousels.has(selector)) return;
+
+  const glide = new Glide(selector, {
+    type: "carousel",
+    startAt: 0,
+    perView: 1,
+    animationDuration: 700,
+    animationTimingFunc: "ease-in-out",
+  });
+
+  glide.mount();
+  mountedCarousels.set(selector, glide);
+}
+
+function destroyCarousel(selector) {
+  const glide = mountedCarousels.get(selector);
+
+  if (!glide) return;
+
+  glide.destroy();
+  mountedCarousels.delete(selector);
 }

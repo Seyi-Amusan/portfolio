@@ -67,6 +67,38 @@ section{
 
 }
 
+@media (min-width: 1024px) {
+    .projects-main {
+        max-width: 65rem !important;
+    }
+
+    .glide {
+        @apply max-w-[65rem] mx-auto;
+    }
+
+    .glide__track {
+        overflow: visible;
+    }
+
+    .glide__slides {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+        transform: none !important;
+        width: auto !important;
+    }
+
+    .glide__slide {
+        width: auto !important;
+        height: auto;
+        flex-shrink: 1;
+    }
+
+    .glide__arrows {
+        display: none;
+    }
+}
+
 .btn{
     @apply bg-[#0080ff] text-xl p-4 text-white hover:text-[#333333] font-semibold rounded-xl shadow-lg transform transition duration-200
 }
