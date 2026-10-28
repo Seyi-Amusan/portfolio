@@ -3,7 +3,8 @@
     "tailwindcss": "^3.4.4"
   },
   "scripts": {
-    "build-css": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch"
+    "build-css": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch",
+    "build": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css"
   },
   "dependencies": {
     "@glidejs/glide": "^3.6.1",
